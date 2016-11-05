@@ -11,17 +11,15 @@
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
+
+  <script src="component/course.js"></script>
 </head>
 <body>
-<div ng-controller="HelloCtrl">
-  <input type="text" ng-model="yourName" placeholder="Enter name here">
-  <br>
-  WOW
-  Hello <span ng-bind="yourName"></span>!
-  <br>
-  <a href="#/page1">Page1</a>
-  <a href="#/page2">Page2</a>
-  <div ng-view></div>
-</div>
+    <div>
+      <a href="#/login">Login</a>
+      <a href="#/courses">Courses</a>
+      <div ng-view></div>
+      <user-info name="'Users Table'"></user-info>
+    </div>
 </body>
 </html>
