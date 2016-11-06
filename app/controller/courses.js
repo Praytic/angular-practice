@@ -1,16 +1,10 @@
 (function () {
-  angular.module('app').controller('CoursesCtrl', ['$routeParams',
-    function CoursesCtrl($routeParams) {
-      this.$routeParams = $routeParams;
-      this.courses = [{
-        id: 1,
-        name: "Kotlin Course"
-      }, {
-        id: 2,
-        name: "Java Course"
-      }, {
-        id: 3,
-        name: "JavaScript Course"
-      }]
-  }]);
+  angular.module('app').controller('CoursesCtrl',['$scope','$http', '$location', 'Course',
+    function($scope, $http, $location, Course) {
+      $http.get('/courses/courses.json').success(function(data, status, headers, config) {
+        Course.query({courseId: 'courses'}, function(data) {
+          $scope.courses = data;
+        });
+      });
+    }]);
 })();

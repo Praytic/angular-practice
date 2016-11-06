@@ -1,1 +1,4 @@
-<courses name="'Courses Table'"></courses>
+<div ng-repeat="course in courses">
+  <h2>{{course.name}}</h2>
+  <p><a href="#/course/{{course.id}}" role="button">View details</a></p>
+</div>
