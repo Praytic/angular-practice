@@ -1,15 +1,7 @@
 <div>
-  <table class="table table-bordered">
-    <tr>
-      <td id="caption" colspan="4">{{$ctrl.name}}</td>
-    </tr>
-    <tr>
-      <td>ID</td>
-      <td>Name</td>
-    </tr>
-    <tr ng-repeat="course in $ctrl.courses">
-      <td>{{course.id}}</td>
-      <td>{{course.name}}</td>
-    </tr>
-  </table>
+  <div>
+    <td id="caption" colspan="4">{{$ctrl.name}}</td>
+  </div>
+  <br>
+  <course-detail data="course" ng-repeat="course in $ctrl.courses"></course-detail>
 </div>
