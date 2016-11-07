@@ -1,5 +1,3 @@
-(function () {
-  angular.module('app').controller('LoginCtrl',
-    function LoginCtrl() {
-    });
-})();
+angular.module('app').controller('LoginCtrl',
+  function LoginCtrl() {
+  });
