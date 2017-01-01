@@ -10,17 +10,19 @@
   <script src="bower_components/angular-animate/angular-animate.js"></script>
   <script src="bower_components/angular-resource/angular-resource.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
   <script src="app.module.js"></script>
   <script src="app.config.js"></script>
   <script src="app.factory.js"></script>
+  <script src="app.init.js"></script>
   <script src="controller/courses.js"></script>
   <script src="controller/login.js"></script>
   <script src="controller/course.js"></script>
 </head>
 <body>
     <div>
-      <a href="#/login">Login</a>
-      <a href="#/course">Courses</a>
+      <a href="#!/login">Login</a>
+      <a href="#!/course">Courses</a>
       <div ng-view></div>
     </div>
 </body>
