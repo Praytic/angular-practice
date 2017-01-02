@@ -1,6 +1,6 @@
-angular.module('app').controller('CoursesCtrl',['$scope','$http', '$location', 'Course',
+angular.module('app').controller('CoursesCtrl',
   function($scope, $http, $location, Course) {
-      Course.query({courseId: 'courses'}, function(data) {
+      Course.get(function(data) {
         $scope.courses = data;
       });
-  }]);
+  });

@@ -1,21 +1,22 @@
 angular.module('app')
   .factory('Course', ['$resource',
     function($resource) {
-      return $resource('courses/:courseId.:format', {
-        courseId: 'courses',
-        format: 'json'
-      }, {
-        query: {method: 'GET', params: {courseId: '@id'}, isArray: true}
-      });
+      return operations($resource('courses/:id.json', {id: 'courses'}));
     }
   ])
   .factory('User', ['$resource',
     function($resource) {
-      return $resource('users/:userId.:format', {
-        userId: 'users',
-        format: 'json'
-      }, {
-        query: {method: 'GET', params: {userId: '@id'}, isArray: true}
-      });
+      return operations($resource('users/:id.json'));
     }
   ]);
+
+function operations(Resource) {
+  return {
+      get: function (success, error) {
+        return Resource.query({method: 'GET', isArray: true}, success, error);
+      },
+      find: function (value, success, error) {
+        return Resource.get({id: value}, success, error);
+      }
+  };
+}
