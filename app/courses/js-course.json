@@ -1,6 +1,6 @@
 {
-    "id": "js-course",
-    "name": "JavaScript Course",
-    "open": false,
-    "level": "competent"
+  "id": "js-course",
+  "name": "JavaScript Course",
+  "open": false,
+  "level": "competent"
 }
