@@ -1,10 +1,30 @@
 [
   {
-    "id": "kotlin-course",
-    "name": "Kotlin Course"
+    "id": "kotlin",
+    "name": "Kotlin Course",
+    "description": "",
+    "date": "23.05.2020",
+    "duration": "03:03"
   },
   {
-    "id": "js-course",
-    "name": "JavaScript Course"
+    "id": "java",
+    "name": "Kotlin Course",
+    "description": "",
+    "date": "01.02.2015",
+    "duration": "00:15"
+  },
+  {
+    "id": "csharp",
+    "name": "Kotlin Course",
+    "description": "",
+    "date": "20.10.2016",
+    "duration": "10:10"
+  },
+  {
+    "id": "js",
+    "name": "JavaScript Course",
+    "description": "",
+    "date": "19.11.2133",
+    "duration": "01:20"
   }
 ]

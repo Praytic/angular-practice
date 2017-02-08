@@ -6,7 +6,7 @@ angular.module('app')
   ])
   .factory('User', ['$resource',
     function($resource) {
-      return operations($resource('users/:id.json'));
+      return operations($resource('login/:id.json'));
     }
   ]);
 

@@ -18,21 +18,17 @@
   <script src="app.config.js"></script>
   <script src="app.factory.js"></script>
   <script src="app.init.js"></script>
-  <script src="courses/courses.ctrl.js"></script>
-  <script src="course/course.ctrl.js"></script>
-  <script src="login/login.ctrl.js"></script>
-  <script src="footer/footer.directive.js"></script>
+
+  <script src="courses/course/course.directive.js"></script>
+  <script src="navbar/course-filter/course-filter.directive.js"></script>
+  <script src="navbar/navbar.directive.js"></script>
+
+  <script src="course-info/course-info.controller.js"></script>
+  <script src="courses/courses.controller.js"></script>
+  <script src="login/login.controller.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-      <ul class="nav navbar-nav">
-        <li><a href="#!/login">Login</a></li>
-        <li><a href="#!/course">Courses</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div ng-view></div>
-  <div footer></div>
+  <div navbar></div>
+  <div ng-view class="container"></div>
 </body>
 </html>
