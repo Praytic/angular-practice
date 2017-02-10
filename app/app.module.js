@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('app', ['ngRoute', 'ngResource', 'ngCookies', 'ui.bootstrap', 'ui.layout']);
+angular.module('app', ['ngRoute', 'ngResource', 'ngCookies', 'ui.bootstrap']);
